@@ -5,23 +5,25 @@ export default function HeroSectionPage() {
   return (
     <>
       <section className="pt-24 md:pt-32">
-        <div className="container-custom mx-auto px-4 md:px-6 lg:px-80">
+        <div className="container mx-auto px-4 md:px-6 lg:px-48">
           <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-[30px] items-center">
             {/* Text Content */}
             <div className="flex flex-col gap-5 md:gap-6 lg:gap-[30px] w-full lg:w-1/2 py-8 md:py-12 lg:py-[92px]">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight md:leading-[1.2] lg:leading-[70px] text-center lg:text-left">
                 <mark className="bg-secondary -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
-                  Making
+                  Brewing
                 </mark>{' '}
-                Great Business{' '}
+                Happiness, One{' '}
                 <mark className="bg-secondary -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
-                  Decision
-                </mark>
+                  Cup
+                </mark>{' '}
+                at a Time
               </h1>
 
               <p className="text-base md:text-lg leading-7 md:leading-8 font-medium text-center lg:text-left max-w-lg mx-auto lg:mx-0">
-                Track your customers behavior to make a good decision that helps
-                the customer use our services better way.
+                Discover the rich flavors and aromas of our specialty coffee,
+                crafted with care and passion. Join us on a journey of taste and
+                experience the art of coffee brewing like never before.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -29,13 +31,13 @@ export default function HeroSectionPage() {
                   href="#"
                   className="px-6 md:px-[30px] py-4 md:py-[20px] rounded-[100px] bg-secondary text-[16px] font-bold leading-[19px] transition-all duration-300 hover:shadow-secondary text-center"
                 >
-                  {"Get Started, It's Free"}
+                  Order Online
                 </Link>
                 <Link
                   href="#"
                   className="px-6 md:px-[30px] py-4 md:py-[20px] rounded-[100px] border border-foreground text-[16px] font-bold leading-[19px] transition-all duration-300 hover:ring-2 hover:ring-secondary hover:bg-secondary hover:border-secondary hover:text-foreground text-center"
                 >
-                  Watch Demo
+                  View Menu
                 </Link>
               </div>
             </div>
@@ -46,7 +48,7 @@ export default function HeroSectionPage() {
               <div className="relative mx-auto lg:ml-[52px] lg:mr-[51px] w-[80%] sm:w-[70%] md:w-[60%] lg:w-[447px] h-full rounded-[26px] overflow-hidden">
                 <Image
                   src="/images/thumbnails/ui.png"
-                  alt="UI Dashboard"
+                  alt="Specialty Coffee Selection"
                   fill
                   className="object-cover"
                   priority
@@ -58,7 +60,7 @@ export default function HeroSectionPage() {
                 <div className="relative w-full h-full drop-shadow-custom">
                   <Image
                     src="/images/thumbnails/review.png"
-                    alt="User Review"
+                    alt="Customer Reviews"
                     fill
                     className="object-contain"
                   />
@@ -70,7 +72,7 @@ export default function HeroSectionPage() {
                 <div className="relative w-full h-full drop-shadow-custom">
                   <Image
                     src="/images/thumbnails/badge.png"
-                    alt="Achievement Badge"
+                    alt="Award-Winning Coffee"
                     fill
                     className="object-contain"
                   />
