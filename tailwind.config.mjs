@@ -9,8 +9,8 @@ export const theme = {
     colors: {
       background: 'var(--background)',
       foreground: 'var(--foreground)',
-      primary: '#4CAF50',
-      secondary: '#8BC34A',
+      primary: '#004AAD',
+      secondary: '#004AAD',
       accent: '#03A9F4',
       muted: '#6c757d',
       border: '#dee2e6',

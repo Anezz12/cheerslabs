@@ -10,13 +10,13 @@ export default function HeroSectionPage() {
             {/* Text Content */}
             <div className="flex flex-col gap-5 md:gap-6 lg:gap-[30px] w-full lg:w-1/2 py-8 md:py-12 lg:py-[92px]">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight md:leading-[1.2] lg:leading-[70px] text-center lg:text-left">
-                <mark className="bg-secondary -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
+                <mark className="bg-[#004AAD] -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
                   Brewing
-                </mark>{' '}
-                Happiness, One{' '}
-                <mark className="bg-secondary -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
+                </mark>
+                Happiness, One
+                <mark className="bg-[#004AAD] -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
                   Cup
-                </mark>{' '}
+                </mark>
                 at a Time
               </h1>
 
@@ -29,13 +29,13 @@ export default function HeroSectionPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="#"
-                  className="px-6 md:px-[30px] py-4 md:py-[20px] rounded-[100px] bg-secondary text-[16px] font-bold leading-[19px] transition-all duration-300 hover:shadow-secondary text-center"
+                  className="px-6 md:px-[30px] py-4 md:py-[20px] rounded-[100px] bg-primary text-[16px] font-bold leading-[19px] transition-all duration-300 hover:shadow-primary text-center"
                 >
                   Order Online
                 </Link>
                 <Link
                   href="#"
-                  className="px-6 md:px-[30px] py-4 md:py-[20px] rounded-[100px] border border-foreground text-[16px] font-bold leading-[19px] transition-all duration-300 hover:ring-2 hover:ring-secondary hover:bg-secondary hover:border-secondary hover:text-foreground text-center"
+                  className="px-6 md:px-[30px] py-4 md:py-[20px] rounded-[100px] border border-foreground text-[16px] font-bold leading-[19px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-primary hover:border-primary hover:text-foreground text-center"
                 >
                   View Menu
                 </Link>
@@ -47,7 +47,7 @@ export default function HeroSectionPage() {
               {/* Main Image */}
               <div className="relative mx-auto lg:ml-[52px] lg:mr-[51px] w-[80%] sm:w-[70%] md:w-[60%] lg:w-[447px] h-full rounded-[26px] overflow-hidden">
                 <Image
-                  src="/images/thumbnails/ui.png"
+                  src="/images/thumbnails/coffee-hero.JPG"
                   alt="Specialty Coffee Selection"
                   fill
                   className="object-cover"
@@ -68,7 +68,7 @@ export default function HeroSectionPage() {
               </div>
 
               {/* Badge Image - Only visible on medium screens and up */}
-              <div className="hidden md:block absolute top-[20%] right-[5%] lg:top-[77px] lg:right-0 w-[100px] lg:w-[136px] h-[100px] lg:h-[136px]">
+              <div className="hidden md:block absolute top-[20%] right-[5%] lg:top-[6px] lg:right-0 w-[100px] lg:w-[136px] h-[100px] lg:h-[136px]">
                 <div className="relative w-full h-full drop-shadow-custom">
                   <Image
                     src="/images/thumbnails/badge.png"
