@@ -1,8 +1,84 @@
-export default function HomePage() {
+import Link from 'next/link';
+import Image from 'next/image';
+
+export default function HeroSectionPage() {
   return (
     <>
-      <section>
-        <h1 className="text-black">Welcome to the Home Page</h1>
+      <section className="pt-24 md:pt-32">
+        <div className="container-custom mx-auto px-4 md:px-6 lg:px-80">
+          <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-[30px] items-center">
+            {/* Text Content */}
+            <div className="flex flex-col gap-5 md:gap-6 lg:gap-[30px] w-full lg:w-1/2 py-8 md:py-12 lg:py-[92px]">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight md:leading-[1.2] lg:leading-[70px] text-center lg:text-left">
+                <mark className="bg-secondary -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
+                  Making
+                </mark>{' '}
+                Great Business{' '}
+                <mark className="bg-secondary -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
+                  Decision
+                </mark>
+              </h1>
+
+              <p className="text-base md:text-lg leading-7 md:leading-8 font-medium text-center lg:text-left max-w-lg mx-auto lg:mx-0">
+                Track your customers behavior to make a good decision that helps
+                the customer use our services better way.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link
+                  href="#"
+                  className="px-6 md:px-[30px] py-4 md:py-[20px] rounded-[100px] bg-secondary text-[16px] font-bold leading-[19px] transition-all duration-300 hover:shadow-secondary text-center"
+                >
+                  {"Get Started, It's Free"}
+                </Link>
+                <Link
+                  href="#"
+                  className="px-6 md:px-[30px] py-4 md:py-[20px] rounded-[100px] border border-foreground text-[16px] font-bold leading-[19px] transition-all duration-300 hover:ring-2 hover:ring-secondary hover:bg-secondary hover:border-secondary hover:text-foreground text-center"
+                >
+                  Watch Demo
+                </Link>
+              </div>
+            </div>
+
+            {/* Image Content */}
+            <div className="relative w-full lg:w-1/2 h-[350px] sm:h-[400px] md:h-[450px] lg:h-[507px] mt-8 lg:mt-0">
+              {/* Main Image */}
+              <div className="relative mx-auto lg:ml-[52px] lg:mr-[51px] w-[80%] sm:w-[70%] md:w-[60%] lg:w-[447px] h-full rounded-[26px] overflow-hidden">
+                <Image
+                  src="/images/thumbnails/ui.png"
+                  alt="UI Dashboard"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              {/* Review Image - Only visible on medium screens and up */}
+              <div className="hidden md:block absolute bottom-[15%] left-[5%] lg:bottom-[68px] lg:left-0 w-[200px] lg:w-[316px] h-[120px] lg:h-[180px]">
+                <div className="relative w-full h-full drop-shadow-custom">
+                  <Image
+                    src="/images/thumbnails/review.png"
+                    alt="User Review"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              {/* Badge Image - Only visible on medium screens and up */}
+              <div className="hidden md:block absolute top-[20%] right-[5%] lg:top-[77px] lg:right-0 w-[100px] lg:w-[136px] h-[100px] lg:h-[136px]">
+                <div className="relative w-full h-full drop-shadow-custom">
+                  <Image
+                    src="/images/thumbnails/badge.png"
+                    alt="Achievement Badge"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
