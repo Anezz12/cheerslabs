@@ -71,7 +71,7 @@ export default function HeroSectionPage() {
               <div className="hidden md:block absolute top-[20%] right-[5%] lg:top-[6px] lg:right-0 w-[100px] lg:w-[136px] h-[100px] lg:h-[136px]">
                 <div className="relative w-full h-full drop-shadow-custom">
                   <Image
-                    src="/images/thumbnails/badge.png"
+                    src="/images/thumbnails/rekomendasi.png"
                     alt="Award-Winning Coffee"
                     fill
                     className="object-contain"
