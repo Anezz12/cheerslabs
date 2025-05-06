@@ -10,11 +10,11 @@ export default function HeroSectionPage() {
             {/* Text Content */}
             <div className="flex flex-col gap-5 md:gap-6 lg:gap-[30px] w-full lg:w-1/2 py-8 md:py-12 lg:py-[92px]">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight md:leading-[1.2] lg:leading-[70px] text-center lg:text-left">
-                <mark className="bg-[#7999c4] -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
+                <mark className="bg-[#004AAD] -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
                   Brewing
                 </mark>
                 Happiness, One
-                <mark className="bg-[#7999c4] -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
+                <mark className="bg-[#004AAD] -mx-1 inline-flex items-center justify-center h-8 md:h-9 lg:h-10 px-2 rounded-sm">
                   Cup
                 </mark>
                 at a Time
