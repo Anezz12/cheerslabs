@@ -56,13 +56,14 @@ export default function HeroSectionPage() {
               </div>
 
               {/* Review Image - Only visible on medium screens and up */}
-              <div className="hidden md:block absolute bottom-[15%] left-[5%] lg:bottom-[68px] lg:left-0 w-[200px] lg:w-[316px] h-[120px] lg:h-[180px]">
+              <div className="hidden md:block absolute bottom-[5%] left-[5%] lg:bottom-[0px] lg:left-2 w-[200px] lg:w-[316px] h-[120px] lg:h-[180px]">
                 <div className="relative w-full h-full drop-shadow-custom">
                   <Image
-                    src="/images/thumbnails/review.png"
+                    src="/images/thumbnails/bintang.jpg"
                     alt="Customer Reviews"
-                    fill
-                    className="object-contain"
+                    height={180}
+                    width={200}
+                    className="object-contain rounded-[26px] overflow-hidden"
                   />
                 </div>
               </div>
@@ -74,7 +75,7 @@ export default function HeroSectionPage() {
                     src="/images/thumbnails/rekomendasi.png"
                     alt="Award-Winning Coffee"
                     fill
-                    className="object-contain"
+                    className="object-contain rounded-[26px] overflow-hidden"
                   />
                 </div>
               </div>
