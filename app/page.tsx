@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import StatsSection from '@/components/StatsSection';
+import ImageSlideShow from '@/components/ImageSlideShow';
 
 export default function HeroSectionPage() {
   return (
@@ -47,13 +48,14 @@ export default function HeroSectionPage() {
             <div className="relative w-full lg:w-1/2 h-[350px] sm:h-[400px] md:h-[450px] lg:h-[507px] mt-8 lg:mt-0">
               {/* Main Image */}
               <div className="relative mx-auto lg:ml-[52px] lg:mr-[51px] w-[80%] sm:w-[70%] md:w-[60%] lg:w-[447px] h-full rounded-[26px] overflow-hidden">
-                <Image
+                {/* <Image
                   src="/images/thumbnails/coffee-hero.JPG"
                   alt="Specialty Coffee Selection"
                   fill
                   className="object-cover"
                   priority
-                />
+                /> */}
+                <ImageSlideShow />
               </div>
 
               {/* Review Image - Only visible on medium screens and up */}
