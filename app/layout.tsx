@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
         <NavbarPage />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

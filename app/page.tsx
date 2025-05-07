@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import StatsSection from '@/components/StatsSection';
 import ImageSlideShow from '@/components/ImageSlideShow';
+import SimpleSteps from '@/components/SimpleSteps';
 
 export default function HeroSectionPage() {
   return (
@@ -87,6 +88,7 @@ export default function HeroSectionPage() {
         </div>
       </section>
       <StatsSection />
+      <SimpleSteps />
     </>
   );
 }
