@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 export default function NavbarPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Handle screen resize
   useEffect(() => {
@@ -18,6 +19,22 @@ export default function NavbarPage() {
 
     return () => {
       window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+
+  // Track scrolling to adjust background opacity
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -41,14 +58,23 @@ export default function NavbarPage() {
       <nav
         className={`fixed z-50 ${
           isMobile ? 'top-[15px] w-[calc(100%-30px)]' : 'top-[30px] w-[1130px]'
-        } left-1/2 -translate-x-1/2 flex items-center bg-[#1e3c63] rounded-[100px] py-2.5 px-[15px] md:px-[30px] transition-all`}
+        } left-1/2 -translate-x-1/2 flex items-center rounded-[100px] py-2.5 px-[15px] md:px-[30px] transition-all duration-300 ${
+          isScrolled
+            ? 'bg-white/80 backdrop-blur-md shadow-lg'
+            : 'bg-transparent backdrop-blur-sm'
+        }`}
       >
-        <Link href="#" className="shrink-0 relative w-[120px] h-[35px]">
+        <Link
+          href="#"
+          className="shrink-0 relative w-[120px] h-[35px] flex items-center justify-center"
+        >
           <Image
-            src="/images/icons/logo.svg"
+            src="/logo-remove.png"
             alt="Logo Cheerslabs"
-            fill
+            height={400}
+            width={120}
             style={{ objectFit: 'contain' }}
+            className=""
             priority
           />
         </Link>
@@ -56,7 +82,7 @@ export default function NavbarPage() {
         {/* Mobile menu button */}
         {isMobile && (
           <button
-            className="ml-auto p-2 text-white"
+            className="ml-auto p-2 text-[#1e3c63]"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -97,53 +123,53 @@ export default function NavbarPage() {
         {/* Desktop navigation */}
         {!isMobile && (
           <>
-            <div className="bg-[#6C8079] w-[1px] h-[50px] ml-[30px]"></div>
+            <div className="bg-[#1e3c63]/20 w-[1px] h-[50px] ml-[30px]"></div>
             <ul className="flex items-center gap-5 md:gap-10 ml-[30px]">
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:underline text-white text-[16px] font-semibold transition-all duration-300"
+                  className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
-                  Features
+                  Menu
                 </Link>
               </li>
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:underline text-white text-[16px] font-semibold transition-all duration-300"
+                  className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
-                  vs. Slock
+                  About Us
                 </Link>
               </li>
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:underline text-white text-[16px] font-semibold transition-all duration-300"
+                  className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
-                  Pricing
+                  Coffee Shop
                 </Link>
               </li>
               <li>
                 <Link
                   href="#"
-                  className="hover:text-primary hover:underline text-white text-[16px] font-semibold transition-all duration-300"
+                  className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
-                  Showcase
+                  Contact
                 </Link>
               </li>
             </ul>
             <div className="ml-auto flex items-center gap-3.5">
               <Link
                 href="#"
-                className="bg-background text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 hover:shadow-secondary"
+                className="text-[#1e3c63] text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 border border-[#1e3c63] hover:bg-[#1e3c63]/5"
               >
-                Call Sales
+                Order Online
               </Link>
               <Link
                 href="#"
-                className="border border-white text-white text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-primary hover:border-primary hover:text-foreground hover:bg-background"
+                className="bg-[#1e3c63] text-white text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 hover:bg-[#004AAD]"
               >
-                My Account
+                Book a Table
               </Link>
             </div>
           </>
@@ -151,59 +177,59 @@ export default function NavbarPage() {
 
         {/* Mobile dropdown menu */}
         {isMobile && isMenuOpen && (
-          <div className="absolute top-full left-0 right-0 mt-2 bg-[#1e3c63] rounded-2xl p-4 shadow-lg">
+          <div className="absolute top-full left-0 right-0 mt-2 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg border border-[#1e3c63]/10">
             <ul className="flex flex-col space-y-4 mb-4">
               <li>
                 <Link
                   href="#"
-                  className="block hover:text-primary hover:underline text-white text-[16px] font-semibold transition-all duration-300"
+                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Features
+                  Menu
                 </Link>
               </li>
               <li>
                 <Link
                   href="#"
-                  className="block hover:text-primary hover:underline text-white text-[16px] font-semibold transition-all duration-300"
+                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  vs. Slock
+                  About Us
                 </Link>
               </li>
               <li>
                 <Link
                   href="#"
-                  className="block hover:text-primary hover:underline text-white text-[16px] font-semibold transition-all duration-300"
+                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Pricing
+                  Coffee Shop
                 </Link>
               </li>
               <li>
                 <Link
                   href="#"
-                  className="block hover:text-primary hover:underline text-white text-[16px] font-semibold transition-all duration-300"
+                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Showcase
+                  Contact
                 </Link>
               </li>
             </ul>
             <div className="flex flex-col gap-3">
               <Link
                 href="#"
-                className="bg-background text-center text-[16px] font-semibold px-5 py-3 rounded-[100px] transition-all duration-300 hover:shadow-secondary"
+                className="text-[#1e3c63] border border-[#1e3c63] text-center text-[16px] font-semibold px-5 py-3 rounded-[100px] transition-all duration-300 hover:bg-[#1e3c63]/5"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Call Sales
+                Order Online
               </Link>
               <Link
                 href="#"
-                className="border border-white text-center text-white text-[16px] font-semibold px-5 py-3 rounded-[100px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-background hover:border-primary hover:text-foreground"
+                className="bg-[#1e3c63] text-white text-center text-[16px] font-semibold px-5 py-3 rounded-[100px] transition-all duration-300 hover:bg-[#004AAD]"
                 onClick={() => setIsMenuOpen(false)}
               >
-                My Account
+                Book a Table
               </Link>
             </div>
           </div>
