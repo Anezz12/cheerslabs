@@ -41,7 +41,7 @@ export default function NavbarPage() {
       <nav
         className={`fixed z-50 ${
           isMobile ? 'top-[15px] w-[calc(100%-30px)]' : 'top-[30px] w-[1130px]'
-        } left-1/2 -translate-x-1/2 flex items-center bg-foreground rounded-[100px] py-2.5 px-[15px] md:px-[30px] transition-all`}
+        } left-1/2 -translate-x-1/2 flex items-center bg-[#1e3c63] rounded-[100px] py-2.5 px-[15px] md:px-[30px] transition-all`}
       >
         <Link href="#" className="shrink-0 relative w-[120px] h-[35px]">
           <Image
@@ -141,7 +141,7 @@ export default function NavbarPage() {
               </Link>
               <Link
                 href="#"
-                className="border border-white text-white text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-primary hover:border-primary hover:text-foreground"
+                className="border border-white text-white text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-primary hover:border-primary hover:text-foreground hover:bg-background"
               >
                 My Account
               </Link>
@@ -151,7 +151,7 @@ export default function NavbarPage() {
 
         {/* Mobile dropdown menu */}
         {isMobile && isMenuOpen && (
-          <div className="absolute top-full left-0 right-0 mt-2 bg-foreground rounded-2xl p-4 shadow-lg">
+          <div className="absolute top-full left-0 right-0 mt-2 bg-[#1e3c63] rounded-2xl p-4 shadow-lg">
             <ul className="flex flex-col space-y-4 mb-4">
               <li>
                 <Link
@@ -200,7 +200,7 @@ export default function NavbarPage() {
               </Link>
               <Link
                 href="#"
-                className="border border-white text-center text-white text-[16px] font-semibold px-5 py-3 rounded-[100px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-primary hover:border-primary hover:text-foreground"
+                className="border border-white text-center text-white text-[16px] font-semibold px-5 py-3 rounded-[100px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-background hover:border-primary hover:text-foreground"
                 onClick={() => setIsMenuOpen(false)}
               >
                 My Account
