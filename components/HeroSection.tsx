@@ -69,12 +69,13 @@ export default function HeroSection() {
             </div>
 
             {/* Badge Image - Only visible on medium screens and up */}
-            <div className="hidden md:block absolute top-[20%] right-[5%] lg:top-[6px] lg:right-0 w-[100px] lg:w-[136px] h-[100px] lg:h-[136px]">
+            <div className="hidden md:block absolute top-[20%] right-[10%] lg:top-[6px] lg:right-0 w-[100px] lg:w-[136px] h-[100px] lg:h-[136px]">
               <div className="relative w-full h-full drop-shadow-custom">
                 <Image
                   src="/images/thumbnails/rekomendasi.png"
                   alt="Award-Winning Coffee"
-                  fill
+                  height={180}
+                  width={200}
                   className="object-contain rounded-[26px] overflow-hidden"
                 />
               </div>
