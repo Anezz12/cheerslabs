@@ -146,7 +146,7 @@ export default function NavbarPage() {
                   href="#"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
-                  Coffee Shop
+                  Location
                 </Link>
               </li>
               <li>
@@ -155,6 +155,14 @@ export default function NavbarPage() {
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
+                >
+                  Media Press
                 </Link>
               </li>
             </ul>
@@ -203,7 +211,7 @@ export default function NavbarPage() {
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Coffee Shop
+                  Location
                 </Link>
               </li>
               <li>
@@ -213,6 +221,15 @@ export default function NavbarPage() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Media Press
                 </Link>
               </li>
             </ul>
