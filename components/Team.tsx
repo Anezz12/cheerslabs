@@ -39,7 +39,7 @@ export default function OurTeam() {
       >
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="mb-6 text-4xl font-bold text-center md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-fern-green-600 to-fern-green-400">
+            <h2 className="mb-6 text-4xl font-bold text-center md:text-5xl bg-clip-text  text-blue-500">
               Tim Digital Business
             </h2>
             <p className="max-w-xl mx-auto text-center text-gray-600 text-lg">
