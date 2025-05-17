@@ -18,7 +18,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: 'Reva Danindra Aulia',
-    nim: '22.11.4958',
+    nim: '22.11.4955',
     description: 'Informatika Amikom Yogyakarta',
     image: '/reva.jpg',
   },
