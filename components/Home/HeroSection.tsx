@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ImageSlideShow from '@/components/ImageSlideShow';
+import ImageSlideShow from '@/components/Home/ImageSlideShow';
 export default function HeroSection() {
   return (
     <section className="pt-24 md:pt-32">
