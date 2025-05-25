@@ -42,23 +42,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Cheers Labs | Digital Business Solution Provider',
-    description:
-      'Cheers Labs menawarkan solusi digital business terbaik untuk membantu perusahaan Anda berkembang di era digital.',
-    images: ['/twitter-image.jpg'],
-  },
-  icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/apple-touch-icon.png',
-  },
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-  themeColor: '#4CAF50',
-  alternates: {
-    canonical: 'https://www.cheerslabs.my.id',
-  },
 };
 
 export default function RootLayout({
