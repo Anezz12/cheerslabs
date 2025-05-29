@@ -3,7 +3,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import NavbarPage from '@/components/Home/Navbar';
 import { Analytics } from '@vercel/analytics/next';
-
+import Footer from '@/components/Home/Footer';
 const poppins = Poppins({
   variable: '--font-poppins',
   weight: ['400', '500', '600', '700'],
@@ -54,6 +54,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} antialiased`}>
         <NavbarPage />
         <main>{children}</main>
+        <Footer />
         <Analytics />
       </body>
     </html>

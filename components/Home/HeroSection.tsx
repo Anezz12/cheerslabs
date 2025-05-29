@@ -25,7 +25,7 @@ export default function HeroSection() {
               experience the art of coffee brewing like never before.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <button className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start lg:flex-row">
               <Link
                 href="#"
                 className="px-[30px] py-[20px] rounded-[100px] bg-[#81a5d4] text-[16px] font-bold leading-[19px] transition-all duration-300 hover:shadow-[#81a5d4]"
@@ -38,7 +38,7 @@ export default function HeroSection() {
               >
                 View Menu
               </Link>
-            </div>
+            </button>
           </div>
 
           {/* Image Content */}
