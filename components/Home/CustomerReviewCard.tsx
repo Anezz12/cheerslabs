@@ -117,7 +117,7 @@ export default function CustomerReviewCard() {
   );
 
   return (
-    <section className="mx-auto mt-[60px] md:mt-[100px] max-w-[1280px] space-y-[20px] md:space-y-[30px] px-4 sm:px-6 md:px-[75px]">
+    <section className="mx-auto mt-[60px] md:mt-[100px] max-w-[1280px] space-y-[20px] md:space-y-[30px] px-4 sm:px-6 md:px-[75px] py-8">
       <div className="text-center">
         <h1 className="text-[22px] md:text-[28px] font-bold text-black">
           Pelanggan Kami yang Puas
