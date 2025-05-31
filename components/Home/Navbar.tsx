@@ -65,7 +65,7 @@ export default function NavbarPage() {
         }`}
       >
         <Link
-          href="#"
+          href="/"
           className="shrink-0 relative w-[120px] h-[35px] flex items-center justify-center"
         >
           <Image
@@ -127,7 +127,7 @@ export default function NavbarPage() {
             <ul className="flex items-center gap-5 md:gap-10 ml-[30px]">
               <li>
                 <Link
-                  href="#"
+                  href="/menu"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
                   Menu
@@ -135,7 +135,7 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
                   About Us
@@ -143,7 +143,7 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/location"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
                   Location
@@ -151,7 +151,7 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
                   Contact
@@ -159,7 +159,7 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/media-press"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
                   Media Press
@@ -189,7 +189,7 @@ export default function NavbarPage() {
             <ul className="flex flex-col space-y-4 mb-4">
               <li>
                 <Link
-                  href="#"
+                  href="/menu"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -198,7 +198,7 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -207,7 +207,7 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/location"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -216,7 +216,7 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -225,7 +225,7 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/media-press"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
