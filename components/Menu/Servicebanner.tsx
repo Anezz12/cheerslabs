@@ -16,11 +16,11 @@ export default function ServiceBanner() {
       </span>
 
       <div className="flex items-center justify-center gap-3 md:gap-5 font-medium">
-        <span className="text-lg md:text-xl text-[#5a6b43]">Pick-up</span>
-        <span className="text-lg md:text-xl text-[#95ad6d]">•</span>
-        <span className="text-lg md:text-xl text-[#5a6b43]">Delivery</span>
-        <span className="text-lg md:text-xl text-[#95ad6d]">•</span>
-        <span className="text-lg md:text-xl text-[#5a6b43]">
+        <span className="text-lg md:text-xl text-green-700">Pick-up</span>
+        <span className="text-lg md:text-xl text-green-500">•</span>
+        <span className="text-lg md:text-xl text-green-700">Delivery</span>
+        <span className="text-lg md:text-xl text-green-500">•</span>
+        <span className="text-lg md:text-xl text-green-700">
           Coffee Catering
         </span>
       </div>
