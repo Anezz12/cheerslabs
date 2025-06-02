@@ -28,20 +28,60 @@ export default function LocationPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r  py-28 pt-48 ">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
-            Visit Our Coffee Shop
-          </h1>
-          <p className="text-black text-lg max-w-2xl mx-auto">
-            {`Experience the perfect cup of coffee in our cozy atmosphere. We're conveniently located and easy to find.
-            `}
-          </p>
+      <div className="bg-white relative py-24 md:py-32">
+        {/* Decorative coffee elements */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="absolute top-10 left-10 w-24 h-24">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="text-[#5c3d2e]"
+            >
+              <path d="M7.5 2.75c0-.414.335-.75.75-.75h7.5c.414 0 .75.336.75.75v1.5A.75.75 0 0 1 15.75 5h-7.5a.75.75 0 0 1-.75-.75v-1.5ZM5.22 5.22A.75.75 0 0 1 6 5h12c.284 0 .53.157.662.384l3 6a.75.75 0 0 1-.662 1.116H3c-.284 0-.53-.157-.662-.384l-3-6a.75.75 0 0 1 .662-1.116H3c.284 0 .53.157.662.384l2.13 4.26a.75.75 0 0 0 1.342-.667L5.22 5.22ZM3 15.75a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75ZM5.25 18a.75.75 0 0 0-.75.75v1.5c0 .414.336.75.75.75h13.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75H5.25Z" />
+            </svg>
+          </div>
+          <div className="absolute bottom-10 right-20 w-16 h-16 transform -rotate-12">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="text-[#5c3d2e]"
+            >
+              <path d="M7.5 2.75c0-.414.335-.75.75-.75h7.5c.414 0 .75.336.75.75v1.5A.75.75 0 0 1 15.75 5h-7.5a.75.75 0 0 1-.75-.75v-1.5ZM5.22 5.22A.75.75 0 0 1 6 5h12c.284 0 .53.157.662.384l3 6a.75.75 0 0 1-.662 1.116H3c-.284 0-.53-.157-.662-.384l-3-6a.75.75 0 0 1 .662-1.116H3c.284 0 .53.157.662.384l2.13 4.26a.75.75 0 0 0 1.342-.667L5.22 5.22ZM3 15.75a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75ZM5.25 18a.75.75 0 0 0-.75.75v1.5c0 .414.336.75.75.75h13.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75H5.25Z" />
+            </svg>
+          </div>
         </div>
+
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col items-center max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Visit Our <span className="text-[#1e3c63]">Coffee Shop</span>
+            </h1>
+
+            <div className="w-16 h-1 bg-[#1e3c63] mb-6"></div>
+
+            <p className="text-gray-700 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
+              {`Experience the perfect cup of coffee in our cozy atmosphere. We're
+              conveniently located in the heart of Yogyakarta and ready to serve
+              you the finest locally-roasted coffee.`}
+            </p>
+          </div>
+        </div>
+
+        {/* Decorative coffee beans at bottom */}
+        <div
+          className="absolute bottom-0 left-0 right-0 h-8 bg-repeat-x opacity-10"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg width='60' height='12' viewBox='0 0 60 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='6' cy='6' rx='6' ry='3' fill='%235c3d2e'/%3E%3Cellipse cx='22' cy='6' rx='6' ry='3' fill='%235c3d2e'/%3E%3Cellipse cx='38' cy='6' rx='6' ry='3' fill='%235c3d2e'/%3E%3Cellipse cx='54' cy='6' rx='6' ry='3' fill='%235c3d2e'/%3E%3C/svg%3E\")",
+            backgroundSize: '60px 12px',
+          }}
+        ></div>
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 py-16">
+      <div id="location-info" className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Location Information */}
           <div className="space-y-8">
@@ -170,7 +210,7 @@ export default function LocationPage() {
           </div>
 
           {/* Map Section */}
-          <div className="h-full">
+          <div id="location-map" className="h-full">
             <div className="bg-white rounded-lg shadow-md overflow-hidden h-full min-h-[400px]">
               <iframe
                 src={location.mapEmbedUrl}
@@ -194,7 +234,7 @@ export default function LocationPage() {
             Come Visit Us Today!
           </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            {`We'd love to serve you our specialty coffee and provide a cozy space
+            {` We'd love to serve you our specialty coffee and provide a cozy space
             for your work or gatherings. First-time visitors get a 10% discount
             on their first coffee!`}
           </p>

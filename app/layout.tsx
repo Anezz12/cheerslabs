@@ -25,23 +25,6 @@ export const metadata: Metadata = {
   creator: 'Tim Cheers Labs',
   publisher: 'Cheers Labs',
   robots: 'index, follow',
-  openGraph: {
-    type: 'website',
-    locale: 'id_ID',
-    url: 'https://www.cheerslabs.my.id',
-    title: 'Cheers Labs | Digital Business Solution Provider',
-    description:
-      'Cheers Labs menawarkan solusi digital business terbaik untuk membantu perusahaan Anda berkembang di era digital.',
-    siteName: 'Cheers Labs',
-    images: [
-      {
-        url: '/logo.png',
-        width: 1200,
-        height: 630,
-        alt: 'Cheers Labs - Digital Business Solutions',
-      },
-    ],
-  },
 };
 
 export default function RootLayout({

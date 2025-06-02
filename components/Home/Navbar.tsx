@@ -138,7 +138,7 @@ export default function NavbarPage() {
                   href="/about"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                 >
-                  About Us
+                  About
                 </Link>
               </li>
               <li>
@@ -202,7 +202,7 @@ export default function NavbarPage() {
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  About Us
+                  About
                 </Link>
               </li>
               <li>
