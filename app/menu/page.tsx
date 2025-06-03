@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function MenuSection() {
   // Example data for Americano Series
-  
+
   const americanoSeries = {
     title: 'AMERICANO SERIES',
     items: [
