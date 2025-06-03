@@ -6,20 +6,19 @@ export default function LocationPage() {
     name: 'Cheers Labs Coffee',
     address:
       'Jl. Pura No.370, Jomblangan, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198',
-    phone: '+62 274 123456',
-    email: 'contact@cheerslabs.com',
+    phone: '+62 851 6145 7365',
+    email: 'contact@wmk08cheerslabs@gmail.com',
     hours: [
-      { day: 'Senin - Jumat', time: '07:00 - 22:00' },
-      { day: 'Sabtu - Minggu', time: '08:00 - 23:00' },
+      { day: 'Selasa - Jumat', time: '17:00 - 23:00' },
+      { day: 'Sabtu - Minggu', time: '17:00 - 23:30' },
     ],
     description:
       'Coffee shop nyaman dengan suasana yang tenang dan cozy, cocok untuk bekerja atau kumpul bersama teman.',
     facilities: [
       'Free Wi-Fi',
-      'Parking',
+      'Free Parking',
       'Outdoor Seating',
       'Power Outlets',
-      'Pet Friendly',
     ],
     mapEmbedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9574854124266!2d110.3987937747393!3d-7.7943262922256675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a570032c75215%3A0x88570c75a756dbac!2scheers%20labs!5e0!3m2!1sen!2sid!4v1748831215716!5m2!1sen!2sid',
