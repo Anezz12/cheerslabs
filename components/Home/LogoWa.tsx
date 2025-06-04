@@ -46,7 +46,7 @@ function LogoWa() {
 
             {/* WhatsApp Button */}
             <Link
-              href="https://api.whatsapp.com/send?phone=6281230498560"
+              href="https://api.whatsapp.com/send?phone=6285161457365"
               target="_blank"
               rel="noopener noreferrer"
               className="relative block"
