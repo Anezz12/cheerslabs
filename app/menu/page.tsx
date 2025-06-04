@@ -6,34 +6,40 @@ import Image from 'next/image';
 export default function MenuSection() {
   // Example data for Americano Series
 
-  const americanoSeries = {
-    title: 'AMERICANO SERIES',
+  const coffeeSeries = {
+    title: 'COFFEE SERIES',
     items: [
       {
         name: 'Iced Americano',
-        price: 22000,
+        price: 7000,
         description:
           'An espresso shot mixed with a glass of water, delivering an ideal balance of character, aroma, and flavor.',
-        imageSrc: '/images/drinks/drink1.JPG',
+        imageSrc: '/images/drinks/Americano.jpg',
       },
       {
-        name: 'Hot Americano',
-        price: 22000,
+        name: 'Brewed Coffee',
+        price: 6000,
         description:
           'An espresso shot mixed with a glass of water, delivering an ideal balance of character, aroma, and flavor.',
         imageSrc: '/images/drinks/drink2.JPG',
         isHot: true,
       },
+    ],
+  };
+
+  const v60Series = {
+    title: 'V60 SERIES',
+    items: [
       {
-        name: 'Iced Manuka Americano',
-        price: 29000,
+        name: 'Classic',
+        price: 15000,
         description:
           'Americano with Manuka honey which is perfect for an energy booster',
         imageSrc: '/images/drinks/drink3.JPG',
       },
       {
-        name: 'Hot Manuka Americano',
-        price: 29000,
+        name: 'Japanese',
+        price: 15000,
         description:
           'Americano with Manuka honey which is perfect for an energy booster',
         imageSrc: '/images/drinks/drink1.JPG',
@@ -42,22 +48,83 @@ export default function MenuSection() {
     ],
   };
 
-  const specialtyCoffee = {
-    title: 'SPECIALTY COFFEE',
+  const coffeemilkSeries = {
+    title: 'COFFEE MILK SERIES',
     items: [
       {
-        name: 'Peach Coffee',
-        price: 29000,
+        name: 'Butterscotch',
+        price: 13000,
         description:
-          'Peach coffee is a blend of coffee flavors, three types of peaches and the aroma of elderflower which creates a fresh and harmonious coffee sensation.',
-        imageSrc: '/images/drinks/drink1.JPG',
+          'Peach .',
+        imageSrc: '/images/drinks/Coffee-Milk.jpg',
       },
       {
-        name: 'Strawberry Manuka',
-        price: 31000,
+        name: 'Caramel',
+        price: 13000,
         description:
           'The combination of Strawberry and Manuka flavors with a refreshing Classic Blend Fore',
-        imageSrc: '/images/drinks/drink2.JPG',
+        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+      },
+      {
+        name: 'Vanilla',
+        price: 13000,
+        description:
+          'The combination of Vanilla flavors with a refreshing Classic Blend Fore',
+        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+      },
+    ],
+  };
+
+  const milkbasedSeries = {
+    title: 'COFFEE MILK SERIES',
+    items: [
+      {
+        name: 'Red Velvet',
+        price: 13000,
+        description:
+          'Peach .',
+        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+      },
+      {
+        name: 'Matcha',
+        price: 13000,
+        description:
+          'The combination of Strawberry and Manuka flavors with a refreshing Classic Blend Fore',
+        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+      },
+      {
+        name: 'Cookies & Cream',
+        price: 13000,
+        description:
+          'The combination of Vanilla flavors and oreo crumbles with a refreshing Classic Blend Fore',
+        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+      },
+    ],
+  };
+
+  const mocktailSeries = {
+    title: 'MOCKTAIL SERIES',
+    items: [
+      {
+        name: 'Blue Lagoon',
+        price: 15000,
+        description:
+          'The combination of Blueberry and Mint flavors with a sparkling water.',
+        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+      },
+      {
+        name: 'Purple Hearts',
+        price: 15000,
+        description:
+          'The combination of Blueberry and Strawberry flavors with a sparkling water.',
+        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+      },
+      {
+        name: "Berry Mine's",
+        price: 15000,
+        description:
+          'The combination of Peach and Grape flavors with a sparkling water.',
+        imageSrc: '/images/drinks/Coffee-Milk.jpg',
       },
     ],
   };
@@ -79,8 +146,11 @@ export default function MenuSection() {
         </div>
 
         <div className="w-full max-w-6xl mx-auto mt-16">
-          <MenuCategory {...americanoSeries} />
-          <MenuCategory {...specialtyCoffee} />
+          <MenuCategory {...coffeeSeries} />
+          <MenuCategory {...v60Series} />
+          <MenuCategory {...coffeemilkSeries} />
+          <MenuCategory {...milkbasedSeries} />
+          <MenuCategory {...mocktailSeries} />
         </div>
       </div>
     </section>
