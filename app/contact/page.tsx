@@ -101,7 +101,7 @@ export default function ContactPage() {
                   ></path>
                 </svg>
               </div>
-              <span className="font-medium">0812-1111-8456</span>
+              <span className="font-medium">+62 851 6145 7365</span>
             </div>
 
             <div className="flex items-start">
@@ -121,7 +121,9 @@ export default function ContactPage() {
                   ></path>
                 </svg>
               </div>
-              <span className="font-medium">hello@fore.coffee</span>
+              <span className="font-medium">
+                contact@wmk08cheerslabs@gmail.com
+              </span>
             </div>
 
             <div className="flex items-start">
@@ -148,11 +150,8 @@ export default function ContactPage() {
                 </svg>
               </div>
               <address className="not-italic font-medium">
-                Gedung Graha Ganesha, Lantai 1 Suite 120 & 130
-                <br />
-                Jl. Hayam Wuruk No. 28, RT 014/RW 001, Kelurahan Kebon Klapa,
-                <br />
-                Kecamatan Gambir, Jakarta Pusat, DKI Jakarta
+                Jl. Pura No.370, Jomblangan, Banguntapan, Kec. Banguntapan,
+                Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198
               </address>
             </div>
           </div>
