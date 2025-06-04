@@ -297,7 +297,7 @@ export default function InstagramSection() {
         {/* "View More" Button */}
         <div className="text-center mt-10">
           <Link
-            href="https://instagram.com/cheerslabs"
+            href="https://www.instagram.com/cheers_labs"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white border-2 border-[#1e3c63] text-[#1e3c63] font-medium px-8 py-3 rounded-md hover:bg-blue-50 transition-colors duration-300"
