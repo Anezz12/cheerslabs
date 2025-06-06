@@ -25,34 +25,17 @@ export default function LocationPage() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
       {/* Hero Section */}
-      <div className="bg-white relative py-24 md:py-32">
-        {/* Decorative coffee elements */}
-        <div className="absolute inset-0 opacity-5 pointer-events-none">
-          <div className="absolute top-10 left-10 w-24 h-24">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="text-[#5c3d2e]"
-            >
-              <path d="M7.5 2.75c0-.414.335-.75.75-.75h7.5c.414 0 .75.336.75.75v1.5A.75.75 0 0 1 15.75 5h-7.5a.75.75 0 0 1-.75-.75v-1.5ZM5.22 5.22A.75.75 0 0 1 6 5h12c.284 0 .53.157.662.384l3 6a.75.75 0 0 1-.662 1.116H3c-.284 0-.53-.157-.662-.384l-3-6a.75.75 0 0 1 .662-1.116H3c.284 0 .53.157.662.384l2.13 4.26a.75.75 0 0 0 1.342-.667L5.22 5.22ZM3 15.75a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75ZM5.25 18a.75.75 0 0 0-.75.75v1.5c0 .414.336.75.75.75h13.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75H5.25Z" />
-            </svg>
-          </div>
-          <div className="absolute bottom-10 right-20 w-16 h-16 transform -rotate-12">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="text-[#5c3d2e]"
-            >
-              <path d="M7.5 2.75c0-.414.335-.75.75-.75h7.5c.414 0 .75.336.75.75v1.5A.75.75 0 0 1 15.75 5h-7.5a.75.75 0 0 1-.75-.75v-1.5ZM5.22 5.22A.75.75 0 0 1 6 5h12c.284 0 .53.157.662.384l3 6a.75.75 0 0 1-.662 1.116H3c-.284 0-.53-.157-.662-.384l-3-6a.75.75 0 0 1 .662-1.116H3c.284 0 .53.157.662.384l2.13 4.26a.75.75 0 0 0 1.342-.667L5.22 5.22ZM3 15.75a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75ZM5.25 18a.75.75 0 0 0-.75.75v1.5c0 .414.336.75.75.75h13.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75H5.25Z" />
-            </svg>
-          </div>
-        </div>
-
-        <div className="container mx-auto px-6">
+      <div className="bg-white relative py-24 md:py-32 overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23654321' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Ccircle cx='50' cy='10' r='1'/%3E%3Ccircle cx='10' cy='50' r='1'/%3E%3Ccircle cx='50' cy='50' r='1.5'/%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: '60px 60px',
+          }}
+        />
+        <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col items-center max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Visit Our <span className="text-[#1e3c63]">Coffee Shop</span>
