@@ -69,14 +69,16 @@ export default function LocationPage() {
         </div>
 
         {/* Decorative coffee beans at bottom */}
-        <div
-          className="absolute bottom-0 left-0 right-0 h-8 bg-repeat-x opacity-10"
-          style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg width='60' height='12' viewBox='0 0 60 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='6' cy='6' rx='6' ry='3' fill='%235c3d2e'/%3E%3Cellipse cx='22' cy='6' rx='6' ry='3' fill='%235c3d2e'/%3E%3Cellipse cx='38' cy='6' rx='6' ry='3' fill='%235c3d2e'/%3E%3Cellipse cx='54' cy='6' rx='6' ry='3' fill='%235c3d2e'/%3E%3C/svg%3E\")",
-            backgroundSize: '60px 12px',
-          }}
-        ></div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden">
+          <div
+            className="w-full h-full bg-repeat-x opacity-25"
+            style={{
+              backgroundImage:
+                "url(\"data:image/svg+xml,%3Csvg width='100' height='32' viewBox='0 0 100 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3CradialGradient id='bean1' cx='50%25' cy='30%25' r='70%25'%3E%3Cstop offset='0%25' stop-color='%23A0623A'/%3E%3Cstop offset='100%25' stop-color='%235C3520'/%3E%3C/radialGradient%3E%3CradialGradient id='bean2' cx='50%25' cy='30%25' r='70%25'%3E%3Cstop offset='0%25' stop-color='%23B8704A'/%3E%3Cstop offset='100%25' stop-color='%236B4028'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cg transform='translate(10,6)'%3E%3Cellipse cx='10' cy='10' rx='8' ry='10' fill='url(%23bean1)'/%3E%3Cpath d='M10 2C10.55 2 11 2.45 11 3V17C11 17.55 10.55 18 10 18C9.45 18 9 17.55 9 17V3C9 2.45 9.45 2 10 2Z' fill='%233D2314'/%3E%3Cellipse cx='10' cy='10' rx='3' ry='6' fill='%233D2314' opacity='0.3'/%3E%3C/g%3E%3Cg transform='translate(35,8)'%3E%3Cellipse cx='8' cy='8' rx='6' ry='8' fill='url(%23bean2)'/%3E%3Cpath d='M8 1C8.55 1 9 1.45 9 2V14C9 14.55 8.55 15 8 15C7.45 15 7 14.55 7 14V2C7 1.45 7.45 1 8 1Z' fill='%23472D1C'/%3E%3Cellipse cx='8' cy='8' rx='2.5' ry='5' fill='%23472D1C' opacity='0.4'/%3E%3C/g%3E%3Cg transform='translate(60,4)'%3E%3Cellipse cx='12' cy='12' rx='10' ry='12' fill='url(%23bean1)'/%3E%3Cpath d='M12 1C12.55 1 13 1.45 13 2V22C13 22.55 12.55 23 12 23C11.45 23 11 22.55 11 22V2C11 1.45 11.45 1 12 1Z' fill='%232B1A0F'/%3E%3Cellipse cx='12' cy='12' rx='4' ry='8' fill='%232B1A0F' opacity='0.2'/%3E%3C/g%3E%3C/svg%3E\")",
+              backgroundSize: '100px 32px',
+            }}
+          />
+        </div>
       </div>
 
       {/* Main Content */}

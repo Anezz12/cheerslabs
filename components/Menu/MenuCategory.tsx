@@ -56,27 +56,48 @@ const MenuItem = ({
   );
 };
 
+// Coffee Bean SVG Component
+const CoffeeBean = ({ className = '' }: { className?: string }) => (
+  <div className={`inline-block ${className}`}>
+    <svg
+      width="12"
+      height="16"
+      viewBox="0 0 12 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <ellipse cx="6" cy="8" rx="6" ry="8" fill="#6B4423" />
+      <ellipse cx="6" cy="8" rx="4.5" ry="6.5" fill="#895A3A" />
+      <path
+        d="M6 2C6.55228 2 7 2.44772 7 3V13C7 13.5523 6.55228 14 6 14C5.44772 14 5 13.5523 5 13V3C5 2.44772 5.44772 2 6 2Z"
+        fill="#543018"
+      />
+      <ellipse cx="6" cy="8" rx="2" ry="4" fill="#543018" opacity="0.3" />
+    </svg>
+  </div>
+);
+
 export default function MenuCategory({ title, items }: MenuCategoryProps) {
   return (
     <div className="w-full mb-24">
       <div className="flex items-center mb-16 max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-start tracking-wide uppercase relative text-[#1e3c63]">
           {title}
-          {/* Decorative dots surrounding text */}
-          <span className="absolute -top-4 left-1/4 w-2 h-2 rounded-full bg-[#1e3c63]"></span>
-          <span className="absolute -bottom-4 left-1/3 w-2 h-2 rounded-full bg-[#1e3c63]"></span>
-          <span className="absolute -top-3 right-1/4 w-2 h-2 rounded-full bg-[#1e3c63]"></span>
-          <span className="absolute top-1/2 -right-6 w-2 h-2 rounded-full bg-[#1e3c63]"></span>
-          <span className="absolute top-1/2 -left-6 w-2 h-2 rounded-full bg-[#1e3c63]"></span>
-          <span className="absolute -bottom-3 right-1/3 w-2 h-2 rounded-full bg-[#1e3c63]"></span>
+          {/* Decorative coffee beans surrounding text */}
+          <CoffeeBean className="absolute -top-5 left-1/4 transform -rotate-12" />
+          <CoffeeBean className="absolute -bottom-5 left-1/3 transform rotate-45" />
+          <CoffeeBean className="absolute -top-4 right-1/4 transform rotate-12" />
+          <CoffeeBean className="absolute top-1/2 -right-8 transform -rotate-45 -translate-y-1/2" />
+          <CoffeeBean className="absolute top-1/2 -left-8 transform rotate-30 -translate-y-1/2" />
+          <CoffeeBean className="absolute -bottom-4 right-1/3 transform -rotate-30" />
         </h2>
 
-        {/* Line with dots */}
+        {/* Line with coffee beans */}
         <div className="ml-6 flex-1 flex items-center">
-          <div className="w-2 h-2 rounded-full bg-[#1e3c63] mx-1"></div>
-          <div className="w-2 h-2 rounded-full bg-[#1e3c63] mx-1"></div>
-          <div className="w-2 h-2 rounded-full bg-[#1e3c63] mx-1"></div>
-          <div className="flex-1 h-0.5 bg-gray-200"></div>
+          <CoffeeBean className="mx-1 transform rotate-12" />
+          <CoffeeBean className="mx-1 transform -rotate-12" />
+          <CoffeeBean className="mx-1 transform rotate-45" />
+          <div className="flex-1 h-0.5 bg-gradient-to-r from-[#6B4423] via-gray-200 to-gray-200 ml-2"></div>
         </div>
       </div>
 
