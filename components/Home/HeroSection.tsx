@@ -35,7 +35,7 @@ export default function HeroSection() {
                 Order Online
               </Link>
               <Link
-                href="#"
+                href="/menu"
                 className="px-[30px] py-[20px] rounded-[100px] border border-[#1e3c63] text-[#1e3c63] text-[16px] font-bold leading-[19px] transition-all duration-300 hover:bg-[#1e3c63] hover:text-white text-center"
               >
                 View Menu
@@ -59,7 +59,7 @@ export default function HeroSection() {
               Order Online
             </Link>
             <Link
-              href="#"
+              href="/menu"
               className="px-[30px] py-[20px] rounded-[100px] border border-[#1e3c63] text-[#1e3c63] text-[16px] font-bold leading-[19px] transition-all duration-300 hover:bg-[#1e3c63] hover:text-white text-center"
             >
               View Menu
