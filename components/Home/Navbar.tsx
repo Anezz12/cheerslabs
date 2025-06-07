@@ -169,7 +169,7 @@ export default function NavbarPage() {
             <div className="ml-auto flex items-center gap-3.5">
               <Link
                 href="#"
-                className="text-[#1e3c63] text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 border border-[#1e3c63] hover:bg-[#1e3c63]/5"
+                className="px-5 h-[43px] flex items-center rounded-[100px]  border border-[#1e3c63] text-[#1e3c63] text-[16px] font-bold leading-[19px] transition-all duration-300 hover:bg-[#1e3c63] hover:text-white text-center"
               >
                 Order Online
               </Link>

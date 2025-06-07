@@ -30,7 +30,7 @@ export default function HeroSection() {
             <div className="hidden lg:flex flex-row gap-4 justify-start">
               <Link
                 href="#"
-                className="px-[30px] py-[20px] rounded-[100px] bg-[#81a5d4] text-white text-[16px] font-bold leading-[19px] transition-all duration-300 hover:bg-[#6b8cb8] text-center"
+                className="px-[30px] py-[20px] rounded-[100px] bg-[#1e3c63] text-white text-[16px] font-bold leading-[19px] transition-all duration-300 hover:bg-[#1e3c63] text-center"
               >
                 Order Online
               </Link>

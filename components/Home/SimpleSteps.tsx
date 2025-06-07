@@ -7,7 +7,7 @@ export default function SimpleSteps() {
         {/* Heading */}
         <div className="flex flex-col items-center gap-3 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-[50px] font-extrabold leading-tight md:leading-[59px]">
-            Perfect Coffee in <span className="text-[#81a5d4]">3 Steps</span>.
+            Perfect Coffee in <span className="text-[#1e3c63]">3 Steps</span>.
           </h2>
           <p className="text-base md:text-lg font-medium leading-[21px] max-w-xl">
             We brew our specialty coffee using techniques perfected over
