@@ -14,6 +14,8 @@ export const theme = {
       accent: '#03A9F4',
       muted: '#6c757d',
       border: '#dee2e6',
+      olivelight: '#9e9d5d',
+      olivedark: '#5d6d37',
     },
     fontFamily: {
       sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],

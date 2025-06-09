@@ -5,20 +5,24 @@ import Image from 'next/image';
 // Gunakan URL relatif dari direktori /public alih-alih impor langsung
 const images = [
   {
-    src: '/images/drinks/drink1.JPG',
+    src: '/images/drinks/Americano.jpg',
     alt: 'Drink 1',
   },
   {
-    src: '/images/drinks/drink2.JPG',
+    src: '/images/drinks/Coffee-Milk.jpg',
     alt: 'Drink 2',
   },
   {
-    src: '/images/drinks/drink3.JPG',
+    src: '/images/drinks/Red-Velvet.jpg',
     alt: 'Drink 3',
   },
   {
-    src: '/images/drinks/drink4.JPG',
+    src: '/images/drinks/Matcha.jpg',
     alt: 'Drink 4',
+  },
+  {
+    src: '/images/drinks/C&C.jpg',
+    alt: 'Drink 5',
   },
 ];
 

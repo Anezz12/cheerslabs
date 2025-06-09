@@ -7,7 +7,7 @@ export default function StatsSection() {
       <div className="relative flex flex-col md:flex-row w-full max-w-[1280px] px-4 md:px-[75px] py-8 md:py-[50px] overflow-hidden">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full text-white gap-8 md:gap-0">
           <h2 className="text-2xl md:text-[32px] text-center md:text-left z-10 leading-tight md:leading-[46px] font-bold w-full md:w-[425px]">
-            {"We Have Big Reasons Improve People's Life Today"}
+            {"Find Your Cheersmate!"}
           </h2>
 
           {/* Stats akan stack pada mobile */}
@@ -24,7 +24,7 @@ export default function StatsSection() {
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="font-poppins text-3xl md:text-[42px] leading-9 md:leading-[46px] font-bold">
-                  12,390
+                  3,123
                 </h3>
                 <p className="w-full md:w-[150px] text-base md:text-lg leading-6 md:leading-8">
                   Happy Customers Using Product
@@ -43,7 +43,7 @@ export default function StatsSection() {
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="font-poppins text-3xl md:text-[42px] leading-9 md:leading-[46px] font-bold">
-                  829
+                  12
                 </h3>
                 <p className="w-full md:w-[119px] text-base md:text-lg leading-6 md:leading-8">
                   Successful On Big Projects
