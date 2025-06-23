@@ -3,19 +3,20 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <main className="max-w-6xl mx-auto relative py-24 md:py-32 overflow-hidden text-[#2C2C2C]">
-      <section className="text-center mb-16">
+    <main>
+      <div className="max-w-6xl mx-auto relative py-24 md:py-32 overflow-hidden text-[#2C2C2C]">
+        <section className="text-center mb-16">
         <h1 className="text-4xl md:text-6xl font-bold text-[#004aad]">"Find Your Cheersmate!"</h1>
         <p className="py-8 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-          Cheers Labs bukan sekadar tempat ngopi, ini adalah laboratorium rasa dan ruang hangat untuk menikmati secangkir kopi, berbagi cerita, dan menciptakan kreativitas rasa bersama pelanggan.
+          Cheers Labs is more than just a coffee spot—it's a flavor lab and a warm space to enjoy a cup of coffee, share stories, and spark creative taste experiences with our customers.
         </p>
       </section>
 
       <section className="grid md:grid-cols-2 gap-12 mb-20 items-center">
         <div>
-          <h2 className="text-2xl font-semibold text-[#3B2F2F] mb-4">Awal Mula Kami</h2>
+          <h2 className="text-2xl font-semibold text-[#3B2F2F] mb-4">How It All Started</h2>
           <p className="text-gray-700 leading-relaxed text-justify">
-            Didirikan oleh mahasiswa UNY dan AMIKOM, Cheers Labs lahir dari semangat program Wirausaha Merdeka (WMK) pada akhir 2024. Apa yang bermula sebagai proyek kampus kini tumbuh menjadi sebuah usaha mandiri yang dikelola oleh lima anak muda dengan satu semangat "menciptakan tempat yang tidak hanya menyajikan minuman, tapi juga menghadirkan suasana."
+            Founded by students from UNY and AMIKOM, Cheers Labs was born out of the Merdeka Entrepreneurship Program (WMK) in late 2024. What started as a campus project has grown into an independent business run by five young individuals united by a shared passion: to create a place that not only serves drinks, but also builds atmosphere.
           </p>
         </div>
         <div className="rounded-2xl overflow-hidden shadow-lg">
@@ -40,15 +41,29 @@ const AboutPage = () => {
           />
         </div>
         <div>
-          <h2 className="text-2xl font-semibold text-[#3B2F2F] mb-4">Tempat dan Pelayanan</h2>
+          <h2 className="text-2xl font-semibold text-[#3B2F2F] mb-4">Where to Find Us & What We Offer</h2>
           <p className="text-gray-700 leading-relaxed text-justify">
-            Berlokasi di Jl. Pura, Banguntapan, Bantul (Gedung PHDI, utara Pura Jagatnatha), kami hadir untuk melayani Anda yang ingin menikmati kopi dan susu dalam berbagai varian, baik secara dine-in maupun take away. Cheers Labs juga tersedia di Shopee Food, agar siapa pun bisa menikmati rasa kami dari mana saja.
+            Located at Jl. Pura, Banguntapan, Bantul (inside the PHDI building, north of Pura Jagatnatha), we are here to serve those looking to enjoy coffee and milk-based beverages in a variety of flavors—available for both dine-in and take away. Cheers Labs is also available on Shopee Food, so you can enjoy our drinks from wherever you are.
+          </p>
+        </div>
+      </section>
+
+      <section className="max-w-3xl text-center mx-auto mb-20 px-4 items-center">
+        <div>
+          <h2 className="text-2xl font-semibold text-[#3B2F2F] mb-4">Where Stories Begin with a Sip</h2>
+          <p className="text-gray-700 leading-relaxed text-justify">
+            More than just serving drinks, we aim to be a place of pause, a place that feels like home—a space where anyone can share stories, laugh, explore flavors, and feel truly welcome. We believe a single cup of drink can spark conversations, connect people, and create lasting memories.
+          </p>
+        </div>
+        <div >
+          <p className="text-gray-700 leading-relaxed text-justify mt-4">
+            With a spirit of community, exploration, and sincerity, we continue to grow together with you.
           </p>
         </div>
       </section>
 
       <section className="text-center mb-10">
-        <h2 className="text-2xl font-semibold text-[#3B2F2F] mb-6">Galeri Suasana & Minuman</h2>
+        <h2 className="text-2xl font-semibold text-[#3B2F2F] mb-6">Cheers in Frames</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {/* Image Container */}  
           {[
@@ -68,6 +83,7 @@ const AboutPage = () => {
           ))}
         </div>
       </section>
+      </div>
     </main>
   );
 };
