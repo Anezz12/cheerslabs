@@ -52,6 +52,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/menu"
+                  className="hover:text-blue-300 transition-colors flex items-center gap-1"
+                >
+                  <span>Menu</span>
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/about"
                   className="hover:text-blue-300 transition-colors flex items-center gap-1"
                 >
@@ -60,18 +68,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/location"
                   className="hover:text-blue-300 transition-colors flex items-center gap-1"
                 >
-                  <span>Services</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/portfolio"
-                  className="hover:text-blue-300 transition-colors flex items-center gap-1"
-                >
-                  <span>Portfolio</span>
+                  <span>Location</span>
                 </Link>
               </li>
               <li>
@@ -93,42 +93,42 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/menu/espresso"
+                  href="/menu"
                   className="hover:text-blue-300 transition-colors"
                 >
-                  Espresso Based
+                  Coffee Series
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/menu/manual-brew"
+                  href="/menu"
                   className="hover:text-blue-300 transition-colors"
                 >
-                  Manual Brew
+                  V60 Series
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/menu/signature"
+                  href="/menu"
                   className="hover:text-blue-300 transition-colors"
                 >
-                  Signature Coffee
+                  Coffee Milk Series
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/menu/non-coffee"
+                  href="/menu"
                   className="hover:text-blue-300 transition-colors"
                 >
-                  Non-Coffee Drinks
+                  Milk Based Series
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/menu/desserts"
+                  href="/menu"
                   className="hover:text-blue-300 transition-colors"
                 >
-                  Pastries & Desserts
+                  Mocktail Series
                 </Link>
               </li>
             </ul>

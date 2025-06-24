@@ -20,8 +20,8 @@ export default function MenuSection() {
         name: 'Brewed Coffee',
         price: 6000,
         description:
-          'An espresso shot mixed with a glass of water, delivering an ideal balance of character, aroma, and flavor.',
-        imageSrc: '/images/drinks/drink2.JPG',
+          'A traditional Indonesian-style coffee brewed by steeping ground coffee directly in hot water. Rich, robust, and unfiltered.',
+        imageSrc: '/images/drinks/Kopi-Tubruk.png',
         isHot: true,
       },
     ],
@@ -34,16 +34,15 @@ export default function MenuSection() {
         name: 'Classic',
         price: 15000,
         description:
-          'Americano with Manuka honey which is perfect for an energy booster',
-        imageSrc: '/images/drinks/drink3.JPG',
+          'A clean and balanced pour-over coffee using hand-selected beans, brewed to highlight natural flavors and aroma.',
+        imageSrc: '/images/drinks/classic-v60.png',
       },
       {
         name: 'Japanese',
         price: 15000,
         description:
-          'Americano with Manuka honey which is perfect for an energy booster',
-        imageSrc: '/images/drinks/drink1.JPG',
-        isHot: true,
+          'A Japanese-style iced pour-over, brewed hot and immediately cooled over ice for a crisp, bright finish.',
+        imageSrc: '/images/drinks/japanese-v60.png',
       },
     ],
   };
@@ -55,49 +54,49 @@ export default function MenuSection() {
         name: 'Butterscotch',
         price: 13000,
         description:
-          'Peach .',
+          'An iced coffee milk drink with rich, buttery sweetness of butterscotch - indulgent and comforting.',
         imageSrc: '/images/drinks/Coffee-Milk.jpg',
       },
       {
         name: 'Caramel',
         price: 13000,
         description:
-          'The combination of Strawberry and Manuka flavors with a refreshing Classic Blend Fore',
+          'Bold iced coffee meets creamy caramel in this sweet, balanced drink with a velvety finish.',
         imageSrc: '/images/drinks/Coffee-Milk.jpg',
       },
       {
         name: 'Vanilla',
         price: 13000,
         description:
-          'The combination of Vanilla flavors with a refreshing Classic Blend Fore',
+          'A refreshing blend of coffee, vanilla essence, and creamy milk — mellow, aromatic, and always smooth.',
         imageSrc: '/images/drinks/Coffee-Milk.jpg',
       },
     ],
   };
 
   const milkbasedSeries = {
-    title: 'COFFEE MILK SERIES',
+    title: 'MILK BASED SERIES',
     items: [
       {
         name: 'Red Velvet',
         price: 13000,
         description:
-          'Peach .',
-        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+          'A smooth iced red velvet drink with hints of cocoa and vanilla — sweet, creamy, and eye-catching.',
+        imageSrc: '/images/drinks/Red-Velvet.jpg',
       },
       {
         name: 'Matcha',
         price: 13000,
         description:
-          'The combination of Strawberry and Manuka flavors with a refreshing Classic Blend Fore',
-        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+          'Premium matcha green tea blended with our creamy milk and served chilled — earthy, smooth, and naturally uplifting.',
+        imageSrc: '/images/drinks/Matcha.jpg',
       },
       {
         name: 'Cookies & Cream',
         price: 13000,
         description:
-          'The combination of Vanilla flavors and oreo crumbles with a refreshing Classic Blend Fore',
-        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+          'A refined twist on a childhood favorite — cookies blended into chilled, creamy milk.',
+        imageSrc: '/images/drinks/C&C.jpg',
       },
     ],
   };
@@ -109,22 +108,22 @@ export default function MenuSection() {
         name: 'Blue Lagoon',
         price: 15000,
         description:
-          'The combination of Blueberry and Mint flavors with a sparkling water.',
-        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+          'A sparkling fusion of blueberry and mint — cool, fruity, and perfectly refreshing.',
+        imageSrc: '/images/drinks/Blue-Lagoon.jpg',
       },
       {
         name: 'Purple Hearts',
         price: 15000,
         description:
-          'The combination of Blueberry and Strawberry flavors with a sparkling water.',
-        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+          'A delightful mix of blueberry and strawberry with a fizzy finish — sweet, tangy, and uplifting.',
+        imageSrc: '/images/drinks/Purple-Hearts.jpg',
       },
       {
         name: "Berry Mine's",
         price: 15000,
         description:
-          'The combination of Peach and Grape flavors with a sparkling water.',
-        imageSrc: '/images/drinks/Coffee-Milk.jpg',
+          'A cheerful medley of grape and peach with fizzy notes — fruity, fun, and made to brighten your day.',
+        imageSrc: "/images/drinks/Berry-Mine's.jpg",
       },
     ],
   };
