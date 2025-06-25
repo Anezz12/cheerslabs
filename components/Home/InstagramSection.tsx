@@ -7,75 +7,75 @@ export default function InstagramSection() {
     // Row 1
     {
       id: 1,
-      imageUrl: '/post-instagram/ig1.png',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://www.instagram.com/reel/DKzJRuUS9Sh/?utm_source=ig_web_copy_link&igsh=MXRocjlsNnV4OTFjbg==',
       alt: 'Cheers Labs Location',
     },
     {
       id: 2,
-      imageUrl: '/post-instagram/ig2.png',
+      imageUrl: '/images/post-instagram/ig2.png',
       link: 'https://www.instagram.com/reel/DKhg21Qvbce/?utm_source=ig_web_copy_link&igsh=ejlyMXUzdXNvMjM=',
       alt: 'Entrepreneurship Days Event at Amikom',
     },
     {
       id: 3,
-      imageUrl: '/post-instagram/ig3.png',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://www.instagram.com/reel/DKerrd0N9vV/?utm_source=ig_web_copy_link&igsh=MTB4Nzg3bHNraGg0dQ==',
       alt: 'Open Hours',
     },
     {
       id: 4,
-      imageUrl: '/instagram/coffee-4.jpg',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://instagram.com/p/sample4',
       alt: 'Barista preparing coffee',
     },
     // Row 2
     {
       id: 5,
-      imageUrl: '/instagram/coffee-5.jpg',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://instagram.com/p/sample5',
       alt: 'Coffee and pastry on table',
     },
     {
       id: 6,
-      imageUrl: '/instagram/coffee-6.jpg',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://instagram.com/p/sample6',
       alt: 'Espresso being pulled',
     },
     {
       id: 7,
-      imageUrl: '/instagram/coffee-7.jpg',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://instagram.com/p/sample7',
       alt: 'Customer enjoying coffee',
     },
     {
       id: 8,
-      imageUrl: '/instagram/coffee-8.jpg',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://instagram.com/p/sample8',
       alt: 'Coffee shop outdoor seating',
     },
     // Row 3
     {
       id: 9,
-      imageUrl: '/instagram/coffee-9.jpg',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://instagram.com/p/sample9',
       alt: 'Coffee brewing methods display',
     },
     {
       id: 10,
-      imageUrl: '/instagram/coffee-10.jpg',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://instagram.com/p/sample10',
       alt: 'Specialty coffee beans',
     },
     {
       id: 11,
-      imageUrl: '/instagram/coffee-11.jpg',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://instagram.com/p/sample11',
       alt: 'Coffee tasting event',
     },
     {
       id: 12,
-      imageUrl: '/instagram/coffee-12.jpg',
+      imageUrl: '/images/post-instagram/ig1.png',
       link: 'https://instagram.com/p/sample12',
       alt: 'Coffee shop staff',
     },
@@ -135,7 +135,7 @@ export default function InstagramSection() {
                   unoptimized={true} // Remove this when you add real images
                 />
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-[#1e3c63] bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="absolute inset-0  bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

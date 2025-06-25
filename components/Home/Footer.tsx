@@ -22,7 +22,9 @@ export default function Footer() {
               <h2 className="text-2xl font-bold">Cheers Labs</h2>
             </div>
             <p className="mt-4 text-gray-300">
-              it's a flavor lab and a warm space to enjoy a cup of coffee, share stories, and spark creative taste experiences with our customers.
+              {
+                'Cheers Labs is your go-to destination for the finest coffee and a cozy atmosphere. Join us for a cup of joy!'
+              }
             </p>
             <div className="pt-2 flex items-center gap-2">
               <span className="text-blue-300">✉️</span>
