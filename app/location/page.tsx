@@ -7,13 +7,13 @@ export default function LocationPage() {
     address:
       'Jl. Pura No.370, Jomblangan, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198',
     phone: '+62 851 6145 7365',
-    email: 'contact@wmk08cheerslabs@gmail.com',
+    email: 'wmk08cheerslabs@gmail.com',
     hours: [
-      { day: 'Selasa - Jumat', time: '17:00 - 23:00' },
-      { day: 'Sabtu - Minggu', time: '17:00 - 23:30' },
+      { day: 'Tuesday - Friday', time: '19:00 - 23:00' },
+      { day: 'Saturday - Sunday', time: '19:00 - 23:30' },
     ],
     description:
-      'Coffee shop nyaman dengan suasana yang tenang dan cozy, cocok untuk bekerja atau kumpul bersama teman.',
+      'A comfortable coffee street with a calm and cozy atmosphere, suitable for working or hanging out with friends.',
     facilities: [
       'Free Wi-Fi',
       'Free Parking',

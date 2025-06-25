@@ -24,7 +24,7 @@ export default function StatsSection() {
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="font-poppins text-3xl md:text-[42px] leading-9 md:leading-[46px] font-bold">
-                  3,123
+                  4,473
                 </h3>
                 <p className="w-full md:w-[150px] text-base md:text-lg leading-6 md:leading-8">
                   Happy Customers Using Product
@@ -43,7 +43,7 @@ export default function StatsSection() {
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="font-poppins text-3xl md:text-[42px] leading-9 md:leading-[46px] font-bold">
-                  12
+                  16
                 </h3>
                 <p className="w-full md:w-[119px] text-base md:text-lg leading-6 md:leading-8">
                   Successful On Big Projects

@@ -22,16 +22,15 @@ export default function Footer() {
               <h2 className="text-2xl font-bold">Cheers Labs</h2>
             </div>
             <p className="mt-4 text-gray-300">
-              Solusi digital business terbaik untuk membantu perusahaan Anda
-              berkembang di era digital.
+              it's a flavor lab and a warm space to enjoy a cup of coffee, share stories, and spark creative taste experiences with our customers.
             </p>
             <div className="pt-2 flex items-center gap-2">
               <span className="text-blue-300">✉️</span>
               <Link
-                href="mailto:contact@cheerslabs.com"
+                href="mailto:wmk08cheerslabs@gmail.com"
                 className="hover:text-blue-300 transition-colors"
               >
-                contact@cheerslabs.com
+                contact@cheerslabs
               </Link>
             </div>
           </div>
