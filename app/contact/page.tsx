@@ -122,7 +122,7 @@ export default function ContactPage() {
                 </svg>
               </div>
               <span className="font-medium">
-                contact@wmk08cheerslabs@gmail.com
+                wmk08cheerslabs@gmail.com
               </span>
             </div>
 

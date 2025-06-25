@@ -15,75 +15,75 @@ export default function CustomerReviewCard() {
     {
       id: 1,
       content:
-        'Kopi di Cheers Labs benar-benar luar biasa! Biji kopinya berkualitas tinggi dan barista yang sangat ramah. Tempatnya juga nyaman untuk ngobrol atau kerja.',
-      name: 'Putri Kartika',
-      role: 'Mahasiswa',
+        'The drinks at Cheers Labs are very good. I love being able to enjoy my drinks with a pleasant barista atmosphere.',
+      name: 'Tiara A',
+      role: 'College Student',
       avatarUrl: '/profile.png',
     },
     {
       id: 2,
       content:
-        'Harga yang sangat reasonable untuk kualitas kopi premium. Latte art-nya juga cantik banget!',
-      name: 'Budi Santoso',
-      role: 'Coffee Enthusiast',
+        'Affordable price but premium quality. Suitable for budget students like me.',
+      name: 'Septa Satya N',
+      role: 'College Student',
       avatarUrl: '/profile.png',
     },
     {
       id: 3,
       content:
-        'Suasana yang cozy dan tenang, Wi-Fi kencang, perfect untuk work from cafe. Menu makanannya juga enak-enak.',
-      name: 'Diana Chen',
-      role: 'Freelancer',
+        'As a coffee lover, I really appreciate the quality and passion of Cheers Labs baristas. It proves that their passion can produce great results and benefit others.',
+      name: 'Gian Harsa',
+      role: 'College Student',
       avatarUrl: '/profile.png',
     },
     {
       id: 4,
       content:
-        'Coffee shop favorit buat nongkrong sama teman. Espresso-nya bold dan rich, persis seperti yang saya suka.',
-      name: 'Ari Santoso',
-      role: 'Mahasiswa',
+        'As the owner of one of the coffee shops in Yogyakarta, I really support students who want and dare to create a business in their busy time. Keep up the spirit Cheers Labs!',
+      name: 'Ambar',
+      role: 'Business Man',
       avatarUrl: '/profile.png',
     },
     {
       id: 5,
       content:
-        'Pelayanan yang excellent dan kopinya selalu konsisten. Cold brew-nya jadi andalan saya setiap hari.',
-      name: 'Jessica Kim',
-      role: 'Marketing Executive',
+        'I felt a warm kinship here at Cheers Labs, both from the baristas who were fun to chat with and the customers who were predominantly students, making me get to know many people from different universities.',
+      name: 'Bayu Darmawan',
+      role: 'College Student',
       avatarUrl: '/profile.png',
     },
     {
       id: 6,
       content:
-        'Tempat yang instagramable dengan kopi yang tidak kalah amazing. Cappuccino-nya creamy dan aromatic.',
-      name: 'Rahmat Hidayat',
-      role: 'Content Creator',
+        'The price is very affordable. Although the price is relatively cheap, the taste and quality remain competitive with other coffee shops in Jogja.',
+      name: 'Afif Wahyu',
+      role: 'College Student',
       avatarUrl: '/profile.png',
     },
-    {
-      id: 7,
-      content:
-        'Sebagai pecinta kopi, saya sangat impressed dengan single origin coffee mereka. Flavor notes-nya complex dan balanced.',
-      name: 'Sarah Johnson',
-      role: 'Coffee Connoisseur',
-      avatarUrl: '/profile.png',
-    },
-    {
-      id: 8,
-      content:
-        'Hidden gem di Yogya! Kopinya top notch, pastry-nya fresh, dan atmosfernya bikin betah berlama-lama.',
-      name: 'David Lee',
-      role: 'Food Blogger',
-      avatarUrl: '/profile.png',
-    },
-    {
-      id: 9,
-      content:
-        'Perfect spot untuk first date atau meeting client. Ambience-nya warm dan kopi signature-nya memorable banget.',
-      name: 'Natasha Singh',
-      role: 'Business Owner',
-      avatarUrl: '/profile.png',
-    },
+    // {
+    //   id: 7,
+    //   content:
+    //     'Sebagai pecinta kopi, saya sangat impressed dengan single origin coffee mereka. Flavor notes-nya complex dan balanced.',
+    //   name: 'Sarah Johnson',
+    //   role: 'Coffee Connoisseur',
+    //   avatarUrl: '/profile.png',
+    // },
+    // {
+    //   id: 8,
+    //   content:
+    //     'Hidden gem di Yogya! Kopinya top notch, pastry-nya fresh, dan atmosfernya bikin betah berlama-lama.',
+    //   name: 'David Lee',
+    //   role: 'Food Blogger',
+    //   avatarUrl: '/profile.png',
+    // },
+    // {
+    //   id: 9,
+    //   content:
+    //     'Perfect spot untuk first date atau meeting client. Ambience-nya warm dan kopi signature-nya memorable banget.',
+    //   name: 'Natasha Singh',
+    //   role: 'Business Owner',
+    //   avatarUrl: '/profile.png',
+    // },
   ];
 
   // Enhanced review card component with white background
@@ -184,11 +184,10 @@ export default function CustomerReviewCard() {
           </div>
 
           <h2 className="text-2xl md:text-[28px] lg:text-3xl font-bold text-white mb-3">
-            Apa Kata <span className="text-yellow-200">Pelanggan Kami</span>
+            What <span className="text-yellow-200">Our Customer</span> Say
           </h2>
           <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
-            Bergabunglah dengan ribuan pelanggan yang telah merasakan pengalaman
-            kopi terbaik di Cheers Labs
+            Join thousands of customers who have experienced the best coffee experience at Cheers Labs
           </p>
         </div>
 
