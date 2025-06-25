@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import { event } from '@/lib/gtag';
 
 function LogoWa() {
   const [showButton, setShowButton] = useState(false);
@@ -23,6 +24,32 @@ function LogoWa() {
     };
   }, []);
 
+  // Function to handle WhatsApp click tracking
+  const handleWhatsAppClick = () => {
+    event({
+      action: 'click',
+      category: 'engagement',
+      label: 'whatsapp_contact',
+      value: 1,
+    });
+
+    // Additional tracking for contact method
+    event({
+      action: 'contact_method_selected',
+      category: 'lead_generation',
+      label: 'whatsapp',
+    });
+  };
+
+  // Function to handle hover tracking (optional)
+  const handleWhatsAppHover = () => {
+    event({
+      action: 'hover',
+      category: 'engagement',
+      label: 'whatsapp_button_hover',
+    });
+  };
+
   return (
     <AnimatePresence>
       {showButton && (
@@ -35,7 +62,10 @@ function LogoWa() {
         >
           <div
             className="relative"
-            onMouseEnter={() => setIsHovered(true)}
+            onMouseEnter={() => {
+              setIsHovered(true);
+              handleWhatsAppHover(); // Track hover event
+            }}
             onMouseLeave={() => setIsHovered(false)}
           >
             {/* Pulse Effect */}
@@ -51,6 +81,7 @@ function LogoWa() {
               rel="noopener noreferrer"
               className="relative block"
               aria-label="Contact us on WhatsApp"
+              onClick={handleWhatsAppClick} // Track click event
             >
               {/* Button Content */}
               <motion.div
