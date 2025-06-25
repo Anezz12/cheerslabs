@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { event } from 'nextjs-google-analytics';
 
 export default function NavbarPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,6 +54,43 @@ export default function NavbarPage() {
     };
   }, [isMenuOpen]);
 
+  // Google Analytics event handlers
+  const handleOrderOnlineClick = () => {
+    event('order_online_click', {
+      category: 'engagement',
+      label: 'navbar_order_online',
+      value: 1,
+    });
+
+    // Additional tracking for conversion funnel
+    event('conversion_intent', {
+      category: 'lead_generation',
+      label: 'order_online_intent',
+    });
+  };
+
+  const handleBookTableClick = () => {
+    event('book_table_click', {
+      category: 'engagement',
+      label: 'navbar_book_table',
+      value: 1,
+    });
+
+    // Additional tracking for conversion funnel
+    event('conversion_intent', {
+      category: 'lead_generation',
+      label: 'book_table_intent',
+    });
+  };
+
+  // Navigation link tracking
+  const handleNavLinkClick = (linkName: string) => {
+    event('navigation_click', {
+      category: 'navigation',
+      label: `navbar_${linkName.toLowerCase().replace(' ', '_')}`,
+    });
+  };
+
   return (
     <header>
       <nav
@@ -67,6 +105,7 @@ export default function NavbarPage() {
         <Link
           href="/"
           className="shrink-0 relative w-[120px] h-[35px] flex items-center justify-center"
+          onClick={() => handleNavLinkClick('logo')}
         >
           <Image
             src="/logo-remove.png"
@@ -83,7 +122,13 @@ export default function NavbarPage() {
         {isMobile && (
           <button
             className="ml-auto p-2 text-[#1e3c63]"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+              event('mobile_menu_toggle', {
+                category: 'navigation',
+                label: isMenuOpen ? 'menu_close' : 'menu_open',
+              });
+            }}
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -129,6 +174,7 @@ export default function NavbarPage() {
                 <Link
                   href="/menu"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
+                  onClick={() => handleNavLinkClick('menu')}
                 >
                   Menu
                 </Link>
@@ -137,6 +183,7 @@ export default function NavbarPage() {
                 <Link
                   href="/about"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
+                  onClick={() => handleNavLinkClick('about')}
                 >
                   About
                 </Link>
@@ -145,6 +192,7 @@ export default function NavbarPage() {
                 <Link
                   href="/location"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
+                  onClick={() => handleNavLinkClick('location')}
                 >
                   Location
                 </Link>
@@ -153,6 +201,7 @@ export default function NavbarPage() {
                 <Link
                   href="/contact"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
+                  onClick={() => handleNavLinkClick('contact')}
                 >
                   Contact
                 </Link>
@@ -161,6 +210,7 @@ export default function NavbarPage() {
                 <Link
                   href="/media-press"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
+                  onClick={() => handleNavLinkClick('media press')}
                 >
                   Media Press
                 </Link>
@@ -169,13 +219,15 @@ export default function NavbarPage() {
             <div className="ml-auto flex items-center gap-3.5">
               <Link
                 href="#"
-                className="px-5 h-[43px] flex items-center rounded-[100px]  border border-[#1e3c63] text-[#1e3c63] text-[16px] font-bold leading-[19px] transition-all duration-300 hover:bg-[#1e3c63] hover:text-white text-center"
+                className="px-5 h-[43px] flex items-center rounded-[100px] border border-[#1e3c63] text-[#1e3c63] text-[16px] font-bold leading-[19px] transition-all duration-300 hover:bg-[#1e3c63] hover:text-white text-center"
+                onClick={handleOrderOnlineClick}
               >
                 Order Online
               </Link>
               <Link
                 href="#"
                 className="bg-[#1e3c63] text-white text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 hover:bg-[#004AAD]"
+                onClick={handleBookTableClick}
               >
                 Book a Table
               </Link>
@@ -191,7 +243,10 @@ export default function NavbarPage() {
                 <Link
                   href="/menu"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    handleNavLinkClick('menu mobile');
+                  }}
                 >
                   Menu
                 </Link>
@@ -200,7 +255,10 @@ export default function NavbarPage() {
                 <Link
                   href="/about"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    handleNavLinkClick('about mobile');
+                  }}
                 >
                   About
                 </Link>
@@ -209,7 +267,10 @@ export default function NavbarPage() {
                 <Link
                   href="/location"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    handleNavLinkClick('location mobile');
+                  }}
                 >
                   Location
                 </Link>
@@ -218,7 +279,10 @@ export default function NavbarPage() {
                 <Link
                   href="/contact"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    handleNavLinkClick('contact mobile');
+                  }}
                 >
                   Contact
                 </Link>
@@ -227,7 +291,10 @@ export default function NavbarPage() {
                 <Link
                   href="/media-press"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    handleNavLinkClick('media press mobile');
+                  }}
                 >
                   Media Press
                 </Link>
@@ -237,14 +304,20 @@ export default function NavbarPage() {
               <Link
                 href="#"
                 className="text-[#1e3c63] border border-[#1e3c63] text-center text-[16px] font-semibold px-5 py-3 rounded-[100px] transition-all duration-300 hover:bg-[#1e3c63]/5"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  handleOrderOnlineClick();
+                }}
               >
                 Order Online
               </Link>
               <Link
                 href="#"
                 className="bg-[#1e3c63] text-white text-center text-[16px] font-semibold px-5 py-3 rounded-[100px] transition-all duration-300 hover:bg-[#004AAD]"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  handleBookTableClick();
+                }}
               >
                 Book a Table
               </Link>
