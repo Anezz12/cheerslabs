@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { event } from '@/lib/gtag';
+import { event } from 'nextjs-google-analytics';
 
 function LogoWa() {
   const [showButton, setShowButton] = useState(false);
@@ -26,16 +26,14 @@ function LogoWa() {
 
   // Function to handle WhatsApp click tracking
   const handleWhatsAppClick = () => {
-    event({
-      action: 'click',
+    event('whatsapp_click', {
       category: 'engagement',
       label: 'whatsapp_contact',
       value: 1,
     });
 
     // Additional tracking for contact method
-    event({
-      action: 'contact_method_selected',
+    event('contact_method_selected', {
       category: 'lead_generation',
       label: 'whatsapp',
     });
@@ -43,8 +41,7 @@ function LogoWa() {
 
   // Function to handle hover tracking (optional)
   const handleWhatsAppHover = () => {
-    event({
-      action: 'hover',
+    event('whatsapp_hover', {
       category: 'engagement',
       label: 'whatsapp_button_hover',
     });
