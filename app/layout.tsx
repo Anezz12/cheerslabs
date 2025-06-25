@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/next';
 import Footer from '@/components/Home/Footer';
 import LogoWa from '@/components/Home/LogoWa';
 import GoogleAnalytics from '@/components/Home/GoogleAnalytics';
+
 const poppins = Poppins({
   variable: '--font-poppins',
   weight: ['400', '500', '600', '700'],
@@ -36,10 +37,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <head>
-        <GoogleAnalytics />
-      </head>
       <body className={`${poppins.variable} antialiased`}>
+        <GoogleAnalytics />
         <NavbarPage />
         <main>{children}</main>
         <LogoWa />
