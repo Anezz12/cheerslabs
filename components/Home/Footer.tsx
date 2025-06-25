@@ -144,7 +144,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://instagram.com/cheerslabs"
+                href="https://instagram.com/cheers_labs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white p-2 rounded-full text-blue-800 hover:bg-blue-300 transition-colors"
