@@ -14,14 +14,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Cheers Labs | Digital Business Solution Provider',
+  title: 'Cheers Labs | Coffee Shop Yogyakarta',
   description:
-    'Cheers Labs menawarkan solusi digital business terbaik untuk membantu perusahaan Anda berkembang di era digital.',
+    'Cheers Labs menawarkan kopi terbaik di Yogyakarta dengan cita rasa yang unik dan pengalaman ngopi yang tak terlupakan.',
   keywords: [
-    'digital business',
+    'coffee shop yogyakarta',
     'cheers labs',
-    'solusi bisnis digital',
-    'transformasi digital',
+    'kopi yogyakarta',
+    'cita rasa kopi',
     'amikom yogyakarta',
   ],
   authors: [{ name: 'Tim Cheers Labs' }],
