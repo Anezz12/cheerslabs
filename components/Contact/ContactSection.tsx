@@ -121,9 +121,7 @@ export default function ContactPage() {
                   ></path>
                 </svg>
               </div>
-              <span className="font-medium">
-                wmk08cheerslabs@gmail.com
-              </span>
+              <span className="font-medium">wmk08cheerslabs@gmail.com</span>
             </div>
 
             <div className="flex items-start">
