@@ -1,11 +1,26 @@
+'use client';
 import ServiceBanner from '@/components/Menu/Servicebanner';
 import MenuCategory from '@/components/Menu/MenuCategory';
 import ImageBanner from '@/public/our-menu.png';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function MenuSection() {
-  // Example data for Americano Series
+  const fadeInUp = {
+    initial: { opacity: 0, y: 30 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+  };
 
+  const staggerContainer = {
+    animate: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  // Example data for Americano Series
   const coffeeSeries = {
     title: 'COFFEE SERIES',
     items: [
@@ -129,29 +144,52 @@ export default function MenuSection() {
   };
 
   return (
-    <section className="container mx-auto py-16 px-4 md:px-6">
-      <div className="flex flex-col items-center">
-        <Image
-          src={ImageBanner}
-          alt="Our Menu"
-          className="mb-12 pt-24"
-          width={620}
-          height={180}
-          priority
-        />
+    <section id="menu" className="container mx-auto py-16 px-4 md:px-6">
+      <motion.div
+        className="flex flex-col items-center"
+        initial="initial"
+        animate="animate"
+        variants={staggerContainer}
+      >
+        <motion.div variants={fadeInUp}>
+          <Image
+            src={ImageBanner}
+            alt="Our Menu"
+            className="mb-12 pt-24"
+            width={620}
+            height={180}
+            priority
+          />
+        </motion.div>
 
-        <div className="w-full max-w-4xl mx-auto">
+        <motion.div className="w-full max-w-4xl mx-auto" variants={fadeInUp}>
           <ServiceBanner />
-        </div>
+        </motion.div>
 
-        <div className="w-full max-w-6xl mx-auto mt-16">
-          <MenuCategory {...coffeeSeries} />
-          <MenuCategory {...v60Series} />
-          <MenuCategory {...coffeemilkSeries} />
-          <MenuCategory {...milkbasedSeries} />
-          <MenuCategory {...mocktailSeries} />
-        </div>
-      </div>
+        <motion.div
+          className="w-full max-w-6xl mx-auto mt-16"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+        >
+          <motion.div variants={fadeInUp}>
+            <MenuCategory {...coffeeSeries} />
+          </motion.div>
+          <motion.div variants={fadeInUp}>
+            <MenuCategory {...v60Series} />
+          </motion.div>
+          <motion.div variants={fadeInUp}>
+            <MenuCategory {...coffeemilkSeries} />
+          </motion.div>
+          <motion.div variants={fadeInUp}>
+            <MenuCategory {...milkbasedSeries} />
+          </motion.div>
+          <motion.div variants={fadeInUp}>
+            <MenuCategory {...mocktailSeries} />
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

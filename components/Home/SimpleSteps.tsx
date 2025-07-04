@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function SimpleSteps() {
   return (
-    <section className="w-full overflow-x-hidden py-12 md:py-20">
+    <section className="w-full overflow-x-hidden py-12 mb-20 md:py-20">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-8 md:gap-[50px]">
         {/* Heading */}
         <div className="flex flex-col items-center gap-3 text-center">

@@ -187,7 +187,8 @@ export default function CustomerReviewCard() {
             What <span className="text-yellow-200">Our Customer</span> Say
           </h2>
           <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
-            Join thousands of customers who have experienced the best coffee experience at Cheers Labs
+            Join thousands of customers who have experienced the best coffee
+            experience at Cheers Labs
           </p>
         </div>
 

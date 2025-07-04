@@ -3,14 +3,22 @@ import SimpleSteps from '@/components/Home/SimpleSteps';
 import CustomerReviewCard from '@/components/Home/CustomerReviewCard';
 import HeroSection from '@/components/Home/HeroSection';
 import InstagramSection from '@/components/Home/InstagramSection';
+import AboutPage from '@/components/About/AboutSection';
+import LocationPage from '@/components/Location/LocationSection';
+import ContactPage from '@/components/Contact/ContactSection';
+import MenuSection from '@/components/Menu/MenuSection';
 export default function Home() {
   return (
     <>
       <HeroSection />
       <StatsSection />
+      <AboutPage />
       <SimpleSteps />
+      <MenuSection />
       <CustomerReviewCard />
       <InstagramSection />
+      <LocationPage />
+      <ContactPage />
     </>
   );
 }

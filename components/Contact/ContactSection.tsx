@@ -69,7 +69,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="container mx-auto py-16 px-4 md:px-6 pt-36">
+    <div id="contact" className="container mx-auto py-16 px-4 md:px-6 pt-36">
       <Toaster position="top-center" />
 
       <div className="flex flex-col md:flex-row gap-8 md:gap-16">
@@ -121,9 +121,7 @@ export default function ContactPage() {
                   ></path>
                 </svg>
               </div>
-              <span className="font-medium">
-                wmk08cheerslabs@gmail.com
-              </span>
+              <span className="font-medium">wmk08cheerslabs@gmail.com</span>
             </div>
 
             <div className="flex items-start">

@@ -25,7 +25,7 @@ export default function LocationPage() {
   };
 
   return (
-    <div className="bg-white ">
+    <div id="location" className="bg-white ">
       {/* Hero Section */}
       <div className="bg-white relative py-24 md:py-32 overflow-hidden">
         <div
