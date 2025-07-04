@@ -172,16 +172,7 @@ export default function NavbarPage() {
             <ul className="flex items-center gap-5 md:gap-10 ml-[30px]">
               <li>
                 <Link
-                  href="/menu"
-                  className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
-                  onClick={() => handleNavLinkClick('menu')}
-                >
-                  Menu
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
+                  href="#about"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                   onClick={() => handleNavLinkClick('about')}
                 >
@@ -190,7 +181,16 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="/location"
+                  href="#menu"
+                  className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
+                  onClick={() => handleNavLinkClick('menu')}
+                >
+                  Menu
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#location"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                   onClick={() => handleNavLinkClick('location')}
                 >
@@ -199,20 +199,11 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="#contact"
                   className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
                   onClick={() => handleNavLinkClick('contact')}
                 >
                   Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/media-press"
-                  className="text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD] hover:underline"
-                  onClick={() => handleNavLinkClick('media press')}
-                >
-                  Media Press
                 </Link>
               </li>
             </ul>

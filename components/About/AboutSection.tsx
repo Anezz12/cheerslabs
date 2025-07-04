@@ -19,7 +19,7 @@ export default function AboutPage() {
   };
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white">
+    <section id="about" className="bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <div className="container mx-auto px-4 md:px-6 lg:px-8 relative py-20 md:py-32 overflow-hidden">
         <motion.section

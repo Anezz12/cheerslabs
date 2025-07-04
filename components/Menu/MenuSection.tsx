@@ -144,7 +144,7 @@ export default function MenuSection() {
   };
 
   return (
-    <section className="container mx-auto py-16 px-4 md:px-6">
+    <section id="menu" className="container mx-auto py-16 px-4 md:px-6">
       <motion.div
         className="flex flex-col items-center"
         initial="initial"
