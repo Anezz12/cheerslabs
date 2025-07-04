@@ -244,18 +244,6 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="/about"
-                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    handleNavLinkClick('about mobile');
-                  }}
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="#menu"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => {
@@ -276,6 +264,18 @@ export default function NavbarPage() {
                   }}
                 >
                   Location
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#contact"
+                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    handleNavLinkClick('contact mobile');
+                  }}
+                >
+                  Contact
                 </Link>
               </li>
             </ul>
