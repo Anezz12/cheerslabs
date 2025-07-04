@@ -6,7 +6,7 @@ import InstagramSection from '@/components/Home/InstagramSection';
 import AboutPage from '@/components/About/AboutSection';
 import LocationPage from '@/components/Location/LocationSection';
 import ContactPage from '@/components/Contact/ContactSection';
-
+import MenuSection from '@/components/Menu/MenuSection';
 export default function Home() {
   return (
     <>
@@ -14,6 +14,7 @@ export default function Home() {
       <StatsSection />
       <AboutPage />
       <SimpleSteps />
+      <MenuSection />
       <CustomerReviewCard />
       <InstagramSection />
       <LocationPage />
