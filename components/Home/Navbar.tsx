@@ -232,14 +232,14 @@ export default function NavbarPage() {
             <ul className="flex flex-col space-y-4 mb-4">
               <li>
                 <Link
-                  href="/menu"
+                  href="#about"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => {
                     setIsMenuOpen(false);
-                    handleNavLinkClick('menu mobile');
+                    handleNavLinkClick('about mobile');
                   }}
                 >
-                  Menu
+                  About
                 </Link>
               </li>
               <li>
@@ -256,7 +256,19 @@ export default function NavbarPage() {
               </li>
               <li>
                 <Link
-                  href="/location"
+                  href="#menu"
+                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    handleNavLinkClick('menu mobile');
+                  }}
+                >
+                  Menu
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#location"
                   className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
                   onClick={() => {
                     setIsMenuOpen(false);
@@ -264,30 +276,6 @@ export default function NavbarPage() {
                   }}
                 >
                   Location
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    handleNavLinkClick('contact mobile');
-                  }}
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/media-press"
-                  className="block text-[#1e3c63] text-[16px] font-semibold transition-all duration-300 hover:text-[#004AAD]"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    handleNavLinkClick('media press mobile');
-                  }}
-                >
-                  Media Press
                 </Link>
               </li>
             </ul>
